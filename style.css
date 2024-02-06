@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+:root{
+    --primary-color: #0f2f44;
+    --text-color: #fefefe;
+}
+
+#header{
+    background-color: var(--primary-color);
+    color: var(--text-color)
+}
+
+#header .row{
+    justify-content: space-between;
+}
+
+#header .row span{
+    padding: 20px, 0;
+    line-height: 0;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav .row .active{
+    background-color: #fff9e6;
+}
+
+nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 40px 20px;
+}
+
+nav ul button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    outline: 0;
+    border: 1px solid #e0e0e0;
+}
+
+nav ul .btn{
+    padding: 0 10px;
+}
+
+#banner{
+    background-image: url("./images/Backgorund\ image.png");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#banner .row{
+    display: block;
+    margin: auto;
+    align-items: left;
+}
+
+#banner .row h1{
+    width: 348px;
+    height: 107px;
+    font-size: 50px;
+    font-weight: 900;
+    color: #0f2e42;
+    align-items: center;
+}
+
+#banner .row h3{
+    font-size: 32px;
+    color: #8484bf;
+}
+
+#banner .row p{
+    font-size: 14px;
+    color: #454545;
+}
+
+#banner .row button{
+    display: inline-block;
+}
+
+#banner .btn{
+    background-color: #8283be;
+    color: white;
+    width: 166px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#banner img{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+}
+
+#service .row{
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+#service .card{
+    width: 33.33%;
+    display: flex;
+
+}
+
+#service .card .img{
+    padding: 60px 10px;
+    background-color: #e9e9e9;
+}
+
+#service .card .contains{
+    padding: 30px 25px 30px 20px;
+    background-color: #ededed;
+}
+
+#service .card .contains h4{
+    padding-bottom: 20px;
+}
+
+#service .card .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0f2f44;
+}
